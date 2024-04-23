@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/logo-clover-04 - Copy.png">
+    <title>YUNANDYUNA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="clover"></div>
+    <!-- <div class="cursor"></div> -->
+
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    
+    <nav class="navbar">
+        <img id="logo" src="assets/logo-clover-04 - Copy.png" width="40px">
+            <div class="menu-left">
+                <a href="Home.html" class="menu-item" id="yunandyuna">YUNANDYUNA</a>
+            </div>
+            <div class="menu-right">
+                <a href="Projects.html" class="menu-item">Projects</a>
+                <a href="About.html" class="menu-item">About</a>
+                <a href="Contacts.html" class="menu-item">Contacts</a>
+            </div>
+    </nav>
+    <br><br><br><br>
+
+
+    <main class="contacts-main">
+        <div id="myinfo">
+            <h2>Let's Connect!</h2>
+            <h3><br>Esther Kim</h3>
+            <p>3D Motion & Interactive Designer<br> 
+                estherkim000102@gmail.com
+            </p>
+        </div>
+    </main>
+    
+
+    <section class="contacts-section">
+        <div class="clover-container">
+            <img id="cloverface" src="assets/1x/cloverface.png">
+            <img id="cloverface2" src="assets/1x/cloverface2.png">            
+        </div>
+        <img id="letter-top" src="assets/1x/letter-top-01.png">
+        <img id="letter-paper" src="assets/1x/letter-paper-01.png">
+        <img id="letter-back" src="assets/1x/letter-back-01.png">
+        <img id="letter-closed" src="assets/1x/letter-closed-01.png" style="display: none;">
+        <img id="letter-clover" src="assets/1x/letter-clover-01.png">
+    
+
+        <form id="emailForm" action="https://formspree.io/f/mqkrwzlp" method="POST" enctype="multipart/form-data">
+            <div id="formbox">
+                <label for="username">Name*</label>
+                <input type="text" id="username" name="username" required><br>
+            </div>
+            <div>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+            <div>
+                <label for="Phone">Phone</label>
+                <input type="tel" id="Phone" name="phone"><br>
+            </div>
+            <div>
+                <label for="comment"></label><br>
+                <textarea type="text" id="comment" name="comment" rows="3" cols="25" placeholder="Send me a note or a good luck wish!" required></textarea>
+            </div>
+    
+            <button onclick="changeText()" type="submit" id="submit">Send</button>
+        </form>
+    </section>
+    
+    <script>
+        const form = document.getElementById('emailForm');
+        
+        form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+
+            const response = await fetch('https://formspree.io/f/mqkrwzlp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                const submitText = document.getElementById("submit");
+                submitText.innerText = 'Sent!';
+                submitText.style.fontStyle = 'italic';
+
+                // Hide the form and other images
+                form.style.display = 'none';
+                document.getElementById('letter-paper').style.display = 'none';
+
+                // Show the closed letter image
+                const letterClosed = document.getElementById('letter-closed');
+                letterClosed.style.display = 'block';
+                // letterClosed.classList.add('animate-in');
+                const letterClover = document.getElementById('letter-clover');
+                letterClover.style.display = 'block';
+                letterClover.classList.add('animate-in');
+
+                // Animate out other images
+                const letterTop = document.getElementById('letter-top');
+                letterTop.classList.add('animate-out');
+                const letterBack = document.getElementById('letter-back');
+                letterBack.classList.add('animate-out');
+
+                }
+        });
+        
+    </script>
+    
+
+        
+        
+        <img id="about-image" src="assets/logo16.png" width="100%">
+ 
+    </body>
+
+
+
+<footer>
+    <br><br><br><br>
+    <h2 id="footer-name">YUNANDYUNA</h2>
+    <br>
+    <small>
+        <p>
+            <a id="emailaddress" href="mailto:estherkim000102@gmail.com">
+                <!-- <i class="fa-solid fa-envelope"></i> -->
+                estherkim000102@gmail.com</a>
+                |
+            <a id="phone">        
+                <!-- <i class="fa-solid fa-phone"></i> -->
+                045287467</a>
+                |
+            <!-- <a id="instagram">        
+                <i class="fa-brands fa-instagram"></i>
+                esther_kim</a>
+                | -->
+            <a id="linkedin" href="https://www.linkedin.com/in/estherkim0102/">        
+                <i class="fa-brands fa-linkedin"></i>
+                estherkim0102</a>
+                |
+            <a id="behance" href="https://www.behance.net/estherkimportfolio">        
+                <i class="fa-brands fa-behance"></i>
+                estherkimportfolio</a>
+        </p>
+
+
+        <!-- <hr> -->
+        &copy; 2024 by Yuna Kim.<br><br><br>
+
+    </small>
+</footer>
+
+<script src="script.js"></script>
+
+</html>

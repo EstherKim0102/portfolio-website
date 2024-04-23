@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/logo-clover-04 - Copy.png">
+    <title>YUNANDYUNA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="clover"></div>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <nav class="navbar">
+        <img id="logo" src="assets/logo-clover-04 - Copy.png" width="40px">
+            <div class="menu-left">
+                <a href="Home.html" class="menu-item" id="yunandyuna">YUNANDYUNA</a>
+            </div>
+            <div class="menu-right">
+                <a href="Projects.html" class="menu-item">Projects</a>
+                <a href="About.html" class="menu-item">About</a>
+                <a href="Contacts.html" class="menu-item">Contacts</a>
+            </div>
+    </nav>
+
+    <header class="projects-class">
+        <br><br><br><h1 id="projectHeader">3D Motion Design</h1>
+        <p id="projectDescription">3D Modeling, Texturing, Rendering</p>
+        <br><br><br>
+
+    </header>
+
+<main>
+
+    <nav>
+        <div class="projects-menu">
+            <a href="#" onclick="showSection('section1')">Motion Design</a>
+            <a href="#" onclick="showSection('section2')">Interactive Work</a>
+            <a href="#" onclick="showSection('section3')">Traditional Art</a>
+        </div>
+    </nav>
+
+
+    <section class="content-section active" id="section1">
+        <div class="page" id="page1">
+            <div id="projectimg" class="page-content">
+                <h1>Hello Spring 🌸</h1>
+                <p>Spring is finally here, and it's time for the flowers to bloom.<br> Created using Cinema 4D, 3D Coat, & Blender. </p>
+                <br><br>
+                <!-- Add more content here -->
+                <img src="assets/projectimage/tinytulip.png">
+                <br><br>
+                <img src="assets/projectimage/tinytulip1.png">
+                <button class="close-btn" onclick="closePage(1)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <div id="projectimg" class="page-content">
+                <h1>Tuktuk</h1>
+                <p>Thailand's traditional three-wheeled motor vehicle used as a taxi.<br> Created using Cinema 4D & Blender. </p>
+                <br><br>
+                <img src="assets/projectimage/tuktuk.gif">
+                <div class="video-container">
+                    <iframe width="560" height="315"  src="https://drive.google.com/file/d/1jIQbvXbnhMVmzMh_VCfol3oArtlJ_Oc-/preview" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <br><br>
+                <img src="assets/projectimage/tuktuk.png">
+                <br><br>
+                <img src="assets/projectimage/tuktuk2.png">
+                <button class="close-btn" onclick="closePage(2)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div id="projectimg" class="page-content">
+                <div class="video-container">
+                    <iframe id="vid-auto" width="560" height="315"  src="https://drive.google.com/file/d/1E4u4XbeJjDHB2yU57Bthx2BtHmxV1mlN/preview" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <!-- <h1>Santa's Delivery</h1>
+                <p>Physics-simulated Rube Goldberg machine in a Santa's Factory.<br> Created using Cinema 4D & Blender. <br> 3D billboard view (front & side)</p>
+                <br><br> -->
+                <video controls>
+                    <source src="assets/projectimage/santa.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <img src="assets/projectimage/santa.png"> -->
+                <br><br><br><br>
+                <img src="assets/projectimage/santa2.png">
+                <button class="close-btn" onclick="closePage(3)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page4">
+            <div id="projectimg" class="page-content">
+                <h1>Time to Play</h1>
+                <p>3D Motion Animation<br> Created using Cinema 4D & Blender.</p>
+                <br><br>
+                <img src="assets/projectimage/mic.gif">
+                <br><br>
+                <img src="assets/projectimage/mic.png">
+                <br><br>
+                <img src="assets/projectimage/mic1.png">
+                <button class="close-btn" onclick="closePage(4)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page5">
+            <div id="projectimg" class="page-content">
+                <h1>Three Little Pigs</h1>
+                <p>Interactive Storytelling Content<br> Created using Cinema 4D & Blender.</p>
+                <br><br>
+                <!-- Add more content here -->
+                <img src="assets/projectimage/threelittlepigs.png">
+                <br><br>
+                <img src="assets/projectimage/threelittlepigs2.png">
+                <br><br>
+                <!-- <img src="assets/projectimage/threelittlepigs3.png">
+                <br><br>
+                <img src="assets/projectimage/threelittlepigs4.png"> -->
+                <button class="close-btn" onclick="closePage(5)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page6">
+            <div id="projectimg" class="page-content">
+                <h1>Underwater</h1>
+                <p>Meet-up<br>Interactive LED Wall Public Installation located in Media Park, Seongbuk-gu, Seoul, South Korea.</p>
+                <br><br>
+                <!-- Add more content here -->
+                <img src="assets/projectimage/sea2.png">
+                <br><br>
+                <img src="assets/projectimage/sea1.png">
+                <br><br>
+                <!-- <img src="assets/projectimage/sea3.jpg"> -->
+                <button class="close-btn" onclick="closePage(6)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page7">
+            <div id="projectimg" class="page-content">
+                <!-- <h1>Anamorphic 3D Billboard</h1> -->
+                <p></p>
+                <br><br>
+                <!-- Add more content here -->
+                <img src="assets/projectimage/anamorphic1.png">
+                <br><br>
+                <img src="assets/projectimage/anamorphic.png">
+                <br><br>                
+                <img src="assets/projectimage/anamorphic.gif">
+                <br><br>
+                <img src="assets/projectimage/anamorphic2.gif">
+                <br><br>
+                <button class="close-btn" onclick="closePage(7)">X</button>
+            </div>
+        </div>
+
+        
+
+        <div class="image-container">
+            <div class="image" onclick="openPage(3)">
+                <img src="assets/projectimage/santa.png" alt="Image 3">
+                <div class="overlay">
+                    <h2>Santa's Delivery</h2>
+                    <p>Physics-simulated Animation</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(1)">
+                <img src="assets/projectimage/tinytulip.png" alt="Image 1">
+                <div class="overlay">
+                    <h2>Hello Spring 🌸</h2>
+                    <p>3D Modeling & Character Design</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(2)">
+                <img src="assets/projectimage/tuktuk1.png" alt="Image 2">
+                <div class="overlay">
+                    <h2>Tuktuk</h2>
+                    <p>3D Motion Animation</p>
+                </div>
+            </div>            
+            <div class="image" onclick="openPage(4)">
+                <img src="assets/projectimage/mic1.png" alt="Image 4">
+                <div class="overlay">
+                    <h2>Time to play</h2>
+                    <p>3D Motion Animation</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(5)">
+                <img src="assets/projectimage/threelittlepigs11.png" alt="Image 5">
+                <div class="overlay">
+                    <h2>The Three Little Pigs</h2>
+                    <p>Interactive Immersive Storytelling</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(6)">
+                <img src="assets/projectimage/sea.png" alt="Image 6">
+                <div class="overlay">
+                    <h2>Underwater Meet-Up</h2>
+                    <p>Interactive LED Installation</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(7)">
+                <img src="assets/projectimage/anamorphic1.png" alt="Image 7">
+                <div class="overlay">
+                    <h2>Anamorphic Text</h2>
+                    <p>3D Simulation</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(8)">
+                <img src="assets/kiki.png" alt="Image 8">
+                <div class="overlay">
+                    <h2>Title 4</h2>
+                    <p>Description 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="content-section" id="section2">
+        <div class="page" id="page9">
+            <div id="projectimg" class="page-content">
+                <h1>Underwater</h1>
+                <p>Meet-up<br>Interactive LED Wall Public Installation located in Media Park, Seongbuk-gu, Seoul, South Korea.</p>
+                <br><br>
+                <img src="assets/projectimage/sea2.png">
+                <br><br>
+                <img src="assets/projectimage/sea1.png">
+                <br><br>
+                <div class="video-container">
+                    <iframe width="560" height="315"  src="https://drive.google.com/file/d/1oP8wMc8_KHtchBVA_2VWINSoR09YMdHX/preview" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <button class="close-btn" onclick="closePage(9)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page10">
+            <div id="projectimg" class="page-content">
+                <img  src="assets/projectimage/locomotion.png">
+                <br><br>
+                <!-- <h1>LOCOMOTION</h1> -->
+                <p>LocoMotion is web-based live coding language for choreography and movement. With LocoMotion, one can activate and move 3D models and motion capture data, via live coding, with brief programming notations inspired by choreographic/dance vocabulary and notation.
+                    <br>LocoMotion is free-and-open-source software, released under the terms of the GNU Public License, version 3. In addition to the abovementioned standalone, it can be used in the Estuary collaborative live coding platform at https://estuary.mcmaster.ca. (Place the text ##locomotion in the first line of an Estuary code panel, with no language selected, to access LocoMotion.).</p>
+                <br><br>
+                <br><br>
+                <img src="assets/projectimage/locomotion11.jpg">
+                <br><br>
+                <img src="assets/projectimage/locomotion3.jpg">
+                <br><br>
+                <img src="assets/projectimage/locomotion2.gif">
+                <br><br>
+                <img src="assets/projectimage/loco3.gif">                <br><br>
+                <img src="assets/projectimage/loco4.gif">                <br><br>
+                <img src="assets/projectimage/loco5.gif">
+                <button class="close-btn" onclick="closePage(10)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page9">
+            <div id="projectimg" class="page-content">
+                <h1>Internal Page11</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero sed velit malesuada, id dapibus metus finibus. Quisque vel vehicula sapien. Integer lobortis nibh quis erat venenatis, vitae malesuada sapien pulvinar.</p>
+                <br><br>
+                <img src="assets/kiki.png">
+                <br><br>
+                <img src="assets/kiki.png">
+                <button class="close-btn" onclick="closePage(11)">X</button>
+            </div>
+        </div>
+
+
+        <div class="image-container">
+            <div class="image" onclick="openPage(9)">
+                <img src="assets/projectimage/sea.png" alt="Image 9">
+                <div class="overlay">
+                    <h2>Underwater Meet-Up</h2>
+                    <p>Interactive LED Installation</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(10)">
+                <img  src="assets/projectimage/loco8.gif" alt="Image 10">
+                <div class="overlay">
+                    <h2>LOCOMOTION</h2>
+                    <p>Choreographic Live Coding 2</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(11)">
+                <img src="assets/logo18.png" alt="Image 11">
+                <div class="overlay">
+                    <h2>Title 11</h2>
+                    <p>Description 3</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(12)">
+                <img src="assets/logo18.png" alt="Image 12">
+                <div class="overlay">
+                    <h2>Title 12</h2>
+                    <p>Description 4</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage()">
+                <img src="assets/logo18.png" alt="Image 5">
+                <div class="overlay">
+                    <h2>Title 3</h2>
+                    <p>Description 3</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage()">
+                <img src="assets/logo18.png" alt="Image 6">
+                <div class="overlay">
+                    <h2>Title 4</h2>
+                    <p>Description 4</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage()">
+                <img src="assets/logo18.png" alt="Image 7">
+                <div class="overlay">
+                    <h2>Title 3</h2>
+                    <p>Description 3</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage()">
+                <img src="assets/logo18.png" alt="Image 8">
+                <div class="overlay">
+                    <h2>Title 4</h2>
+                    <p>Description 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="content-section" id="section3">
+        <div class="page" id="page17">
+            <div id="projectimg" class="page-content">
+                <h1>Hi, snake!</h1>
+                <p>Acrylic painting.</p>
+                <br><br>
+                <img src="assets/projectimage/Hi Snake!.jpg">
+                <br><br>
+                <button class="close-btn" onclick="closePage(17)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page18">
+            <div id="projectimg" class="page-content">
+                <h1>Cats, cats, cats...</h1>
+                <p>They're just cats, cats, cats.... and...<br><br> Water color painting.</p>
+                <br><br>
+                <img src="assets/projectimage/cats.jpg">
+                <br><br>
+                <button class="close-btn" onclick="closePage(18)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page19">
+            <div id="projectimg" class="page-content">
+                <h1>Cheesenana</h1>
+                <p>Acrylic painting.</p>
+                <br><br>
+                <img src="assets/projectimage/Cheese Banana.jpg">
+                <br><br>
+                <button class="close-btn" onclick="closePage(19)">X</button>
+            </div>
+        </div>
+        <div class="page" id="page20">
+            <div id="projectimg" class="page-content">
+                <h1>Let's go!</h1>
+                <p>Digital artworks.</p>
+                <br><br>
+                <img src="assets/projectimage/IMG_4552.gif">
+                <br><br>
+                <img src="assets/projectimage/IMG_4555.gif">
+                <br><br>
+                <button class="close-btn" onclick="closePage(20)">X</button>
+            </div>
+        </div> 
+        <div class="page" id="page21">
+            <div id="projectimg" class="page-content">
+                <h1>Chameleon</h1>
+                <p>2D Animation.</p>
+                <br><br>
+                <img src="assets/projectimage/chameleon7.png">
+                <br><br>
+                <img src="assets/projectimage/chameleon5.jpg">
+                <br><br>
+                <img src="assets/projectimage/chameleon6.png">
+                <br><br>
+                <div class="video-container">
+                    <iframe width="560" height="315"  src="https://drive.google.com/file/d/1aPMtU_p9tlsNnlMESmthw_HZrbspySXY/preview" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                </div>
+                <video controls>
+                    <source src="assets/projectimage/chameleon.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="assets/projectimage/chameleon1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="assets/projectimage/chameleon2.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="close-btn" onclick="closePage(21)">X</button>
+            </div>
+        </div> 
+        <div class="page" id="page22">
+            <div id="projectimg" class="page-content">
+                <h1>Dimension in Lights</h1>
+                <p>Sculptural Installation.</p>
+                <br><br>
+                <img src="assets/projectimage/Dimension in light-01.png">
+                <br><br>
+                <button class="close-btn" onclick="closePage(22)">X</button>
+            </div>
+        </div>
+       
+
+        <div class="image-container">
+            <div class="image" onclick="openPage(17)">
+                <img src= "assets/projectimage/Hi Snake!.jpg" alt="Image 17">
+                <div class="overlay">
+                    <h2>Hi, snake!</h2>
+                    <p>Acrylic</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(18)">
+                <img src="assets/projectimage/cats.jpg" alt="Image 18">
+                <div class="overlay">
+                    <h2>Cats, cats, cats...</h2>
+                    <p>Water color</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(19)">
+                <img src="assets/projectimage/Cheese Banana.jpg" alt="Image 19">
+                <div class="overlay">
+                    <h2>Cheesenana</h2>
+                    <p>Acrylic</p>
+                </div>
+            </div>
+            <div class="image" id="halfimg" onclick="openPage(20)">
+                <img src="assets/projectimage/IMG_4552.gif" alt="Image 20">
+                <img src="assets/projectimage/IMG_4555.gif" alt="Image 20-1">
+                <div class="overlay">
+                    <h2>Let's go!</h2>
+                    <p>Digital Art</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(21)">
+                <img src="assets/projectimage/chameleon7.png" alt="Image 21">
+                <div class="overlay">
+                    <h2>Chameleon</h2>
+                    <p>2D Animation</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(22)">
+                <img src="assets/projectimage/Dimension in light-01.png" alt="Image 22">
+                <div class="overlay">
+                    <h2>Dimension in Lights</h2>
+                    <p>Sculptural Installation</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(23)">
+                <img src="assets/logo16.png" alt="Image 23">
+                <div class="overlay">
+                    <h2>Title 3</h2>
+                    <p>Description 3</p>
+                </div>
+            </div>
+            <div class="image" onclick="openPage(24)">
+                <img src="assets/logo16.png" alt="Image 24">
+                <div class="overlay">
+                    <h2>Title 4</h2>
+                    <p>Description 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+
+        function openPage(pageNum) {
+            var page = document.getElementById("page" + pageNum);
+
+            
+            var iframe = page.querySelector("iframe");
+ 
+            // Play the video if an iframe is found
+            if (iframe) {
+                // Send a postMessage to the iframe to play the video
+                iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+            }
+
+            page.style.display = "block";
+            document.body.style.overflow = "hidden"; // Disable scrolling on the background content
+        }
+        function closePage(pageNum) {
+            var page = document.getElementById("page" + pageNum);
+
+            page.style.display = "none";
+            document.body.style.overflow = "auto"; // Enable scrolling on the background content
+        }
+
+        function showSection(sectionId) {
+
+            var projectHeader = document.getElementById('projectHeader');
+            var projectDescription = document.getElementById('projectDescription');
+
+            switch (sectionId) {
+                case 'section1':
+                    projectHeader.innerText = 'Motion Design';
+                    projectDescription.innerText = '3D Modeling, Texturing, Rendering';
+                    break;
+                case 'section2':
+                    projectHeader.innerText = 'Interactive Work';
+                    projectDescription.innerText = 'XR, VR, AR, User Responsive';
+                    break;
+                case 'section3':
+                    projectHeader.innerText = 'Traditional Art';
+                    projectDescription.innerText = '2D Animation, Paintings, Digital Art';
+                    break;
+            }
+
+            // Hide all sections
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+    </script>
+
+
+</main>
+
+</body>
+
+
+
+
+<footer>
+    <br><br><br><br>
+    <h2 id="footer-name">YUNANDYUNA</h2>
+    <br>
+    <small>
+        <p>
+            <a id="emailaddress" href="mailto:estherkim000102@gmail.com">
+                <!-- <i class="fa-solid fa-envelope"></i> -->
+                estherkim000102@gmail.com</a>
+                |
+            <a id="phone">        
+                <!-- <i class="fa-solid fa-phone"></i> -->
+                045287467</a>
+                |
+            <!-- <a id="instagram">        
+                <i class="fa-brands fa-instagram"></i>
+                esther_kim</a>
+                | -->
+            <a id="linkedin" href="https://www.linkedin.com/in/estherkim0102/">        
+                <i class="fa-brands fa-linkedin"></i>
+                estherkim0102</a>
+                |
+            <a id="behance" href="https://www.behance.net/estherkimportfolio">        
+                <i class="fa-brands fa-behance"></i>
+                estherkimportfolio</a>
+        </p>
+
+
+        <!-- <hr> -->
+        &copy; 2024 by Yuna Kim.<br><br><br>
+
+    </small>
+</footer>
+
+<script src="script.js"></script>
+
+</html>

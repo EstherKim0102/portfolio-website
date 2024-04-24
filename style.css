@@ -590,23 +590,22 @@ video{
     align-items: center;
     margin-left: 20%;
     position: absolute;
-    transition: transform 0.5s; /* Smooth transition for the rotation effect */
+    transition: transform 0.5s ease-in-out;
 }
 
 
 .logo-container img#logoCV2 {
     transform: rotateY(90deg);
-    opacity: 0; /* Hide the replacement image initially */
+    opacity: 0; 
 }
 
 .logo-container:hover img#logoCV1 {
-    transform: rotateY(-90deg); /* Rotate the original image */
-    opacity: 0; /* Hide the original image on hover */
+    transform: rotateY(-90deg); 
+    opacity: 0; 
 }
-
 .logo-container:hover img#logoCV2 {
-    transform: rotateY(0); /* Rotate the replacement image back to normal */
-    opacity: 1; /* Show the replacement image on hover */
+    transform: rotateY(0); 
+    opacity: 1;
 }
 
 

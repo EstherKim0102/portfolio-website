@@ -116,11 +116,21 @@ article{
 
 .home-main h1{
     font-family: Raleway, Inter;
-    font-size: 40px;
+    font-size: 60px;
+    /* color: #b085ff; */
     font-weight: normal;
-    padding: 10%;
+    /* text-shadow: -5px -5px 6px #56d8c7a8;  */
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: left;
+    display: flex;
+    position: absolute;
 }
-
+.home-main h1:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-15px);
+}
 .image-container-full {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -160,14 +170,23 @@ article{
     background-color: white;
 }
 
-.home-main h1{
-    text-align: center;
-}
-
 #mainBanner{
     width: auto;
     height: 80%;
 }
+.home-main spline-viewer{
+    display: flex;
+    position: absolute;
+    height: max-content;
+}
+/* .home-main iframe{
+    display: flex;
+    position: absolute;
+    height: max-content;
+    width: 100%;
+} */
+
+
 
 
 /* Projects PAGE */

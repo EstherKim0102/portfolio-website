@@ -12,7 +12,7 @@ document.addEventListener('mousemove', (event) => {
 document.addEventListener('click', function(event) {
     for (let i = 0; i < 5; i++) {
         const clover = document.createElement('img');
-        clover.src = '/assets/clover.png';
+        clover.src = './assets/clover.png';
         clover.classList.add('clover');
         document.body.appendChild(clover);
 

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +20,50 @@
     <script src="https://kit.fontawesome.com/5ea9d396e0.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
+
+    <style>
+        /* Main loader styles */
+        #mainLoader {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: #fff; /* Optional: Add a background color */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mainLoader img {
+            width: 100px; /* Adjust size as needed */
+            height: 100px; /* Adjust size as needed */
+        }
+        #mainLoader h1 {
+            font-family: Raleway, Inter;
+        font-size: 30px;
+        /* color: #b085ff; */
+        font-weight: 500;        
+        }
+
+        /* Hide loader when the content is loaded */
+        #mainLoader.hidden {
+            display: none;
+        }
+    </style>
+
 </head>
 
 
+
 <body>
-    
+    <div id="mainLoader"><img src="assets/logo-clover-04.png" alt="Loading..." /><h1>Welcome to my portfolio site!</h1></div>
+
+
     <div class="clover"></div>
-    <!-- <div class="cursor"></div> -->
-
-
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
@@ -50,10 +87,15 @@
 
     <main class="home-main">
         <section id="mainBanner">
-                <br><br>
+            
+            <br><br>
 
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.1.7/build/spline-viewer.js"></script>
+            <spline-viewer id="splineViewer" url="https://prod.spline.design/guGfu7HccaSHHE1w/scene.splinecode"></spline-viewer>
+            
+<!--        
                 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.1.7/build/spline-viewer.js"></script>
-                <spline-viewer loading-anim-type="spinner-small-light" url="https://prod.spline.design/guGfu7HccaSHHE1w/scene.splinecode"></spline-viewer>
+                <spline-viewer loading-anim-type="spinner-small-light" url="https://prod.spline.design/guGfu7HccaSHHE1w/scene.splinecode"></spline-viewer> -->
 
                 <!-- <iframe src='https://my.spline.design/untitled-dd135b530d12d98f499fca0bfa4564c6/' frameborder='0' width='100%' height='100%'></iframe> -->
                 
@@ -68,41 +110,13 @@
 
         </section>
     </main>
-<!-- 
-    
-
-        <div class="image-container-full">
-            <div class="image-full">
-                <img src="assets/logo16.png" alt="Image 1">
-                <div class="overlay" id="overlay1">
-                    <h2>Title 1</h2>
-                    <p>Description 1</p>
-                </div>
-            </div>
-            <div class="image-full">
-                <img src="assets/logo18.png" alt="Image 2">
-                <div class="overlay" id="overlay2">
-                    <h2>Title 2</h2>
-                    <p>Description 2</p>
-                </div>
-            </div>
-            <div class="image-full">
-                <img src="assets/kiki.png" alt="Image 3">
-                <div class="overlay" id="overlay3">
-                    <h2>Title 3</h2>
-                    <p>Description 3</p>
-                </div>
-            </div>
-        </div>
- -->
 
 
     </body>
 
-
-
-    <footer>
+    <footer >
     <br><br><br><br>
+
     <h2 id="footer-name">YUNANDYUNA</h2>
     <br>
     <small>
@@ -137,5 +151,16 @@
 
     <script src="script.js"></script>
 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mainLoader = document.getElementById('mainLoader');
+            
+            // Hide loader after 2 seconds
+            setTimeout(() => {
+                mainLoader.classList.add('hidden');
+            }, 2000); // 2000 milliseconds = 2 seconds
+        });
+    </script>
 
 </html>

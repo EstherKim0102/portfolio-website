@@ -3,6 +3,8 @@ const coords = {x: 0, y: 0};
 const circles = document.querySelectorAll(".circle");
 const colors = ["#47ff97", "#6fff87", "#8cfe78", "#a6fd69", "#befb5c", "#d4f951", "#eaf648", "#fff242"];
 
+
+
 document.addEventListener('mousemove', (event) => {
     const mouseX = event.pageX; // Get the mouse X-coordinate
     const mouseY = event.pageY; // Get the mouse Y-coordinate

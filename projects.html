@@ -561,7 +561,7 @@
                 <img src="assets/projectimage/chameleon5.jpg"><br><br>
                 <img src="assets/projectimage/chameleon6.png"><br><br>
                 <div class="video-container" id="video-close">
-                    <iframe width="560" height="315"  src="https://drive.google.com/file/d/1aPMtU_p9tlsNnlMESmthw_HZrbspySXY/preview" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="iframe-video" width="560" height="auto"  src="https://drive.google.com/file/d/1aPMtU_p9tlsNnlMESmthw_HZrbspySXY/preview" frameborder="0" allowfullscreen></iframe>
                     <br>
                 </div>
                 <br><br>
@@ -673,6 +673,12 @@
                     video.pause();
                 }
             });
+
+                    // Stop the iframe video by resetting its source
+        var iframe = document.getElementById("iframe-video");
+        var iframeSrc = iframe.src; // Store the current src
+        iframe.src = ""; // Temporarily remove the src to stop the video
+        iframe.src = iframeSrc; // Set the src back
 
         }
 

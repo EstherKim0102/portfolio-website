@@ -214,6 +214,39 @@ article{
     font-family: Inter, Montserrat;
 }
 
+
+    /* Style for arrows */
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 36px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Left arrow */
+    #left-arrow {
+        left: 10px;
+    }
+
+    /* Right arrow */
+    #right-arrow {
+        right: 10px;
+    }
+
+    /* Arrow hover effect */
+    .arrow:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(255, 255, 255, 1
+        );
+    }
+
+
 .image {
     position: relative;
     overflow: hidden;
